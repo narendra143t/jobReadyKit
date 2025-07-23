@@ -128,3 +128,54 @@ nav.open {
     transform: translateY(0);
   }
 }
+/* home section */
+hero-box {
+  padding: 1.5rem;
+  border-radius: 12px;
+  text-align: center;
+  color: #e5e7eb; /* Light gray */
+  font-family: 'Segoe UI', sans-serif;
+}
+
+.hero-title {
+  font-weight: 700;
+  font-size: 1.8rem;
+  color: #10b981; /* Teal green */
+}
+
+.hero-subtitle {
+  font-size: 1.2rem;
+  color: #ffffff;
+  font-weight: 600;
+  margin-bottom: 0.4rem;
+}
+
+.hero-desc {
+  color: #9ca3af;
+  font-size: 0.95rem;
+  margin-bottom: 1rem;
+}
+
+.hero-warning {
+  background-color: #3f1d1d;
+  border: 1px solid #ff5c5c;
+  color: #f87171;
+  padding: 0.75rem;
+  border-radius: 8px;
+  font-size: 0.9rem;
+  margin-bottom: 1rem;
+  line-height: 1.4;
+}
+
+.hero-warning small {
+  color: #eab308;
+  display: block;
+  font-size: 0.75rem;
+  margin-top: 0.3rem;
+}
+
+.hero-benefits {
+  color: #a7f3d0;
+  font-size: 1rem;
+  font-weight: 500;
+}
