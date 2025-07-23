@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Responsive Neon Nav</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="navbar">
+    <div class="logo">JobReadyKit</div>
+    <div class="hamburger" id="hamburger">
+      <div class="bar"></div>
+      <div class="bar"></div>
+      <div class="bar"></div>
+    </div>
+    <nav id="navLinks">
+      <a href="#job" >Job Ready Kit</a>
+      <a href="#free" >Free Content</a>
+      <a href="#kit" >Complete Kit</a>
+    </nav>
+  </header>
+
+  <main>
+    <section id="job" class="page-section active">
+      <h1>🚀 Job Ready Kit</h1>
+      <p>All tools and guides to make you job-ready.</p>
+    </section>
+    <section id="free" class="page-section">
+      <h1>📚 Free Content</h1>
+      <p>Hand-picked learning materials for free.</p>
+    </section>
+    <section id="kit" class="page-section">
+      <h1>🎁 Complete Kit</h1>
+      <p>Get everything in one powerful bundle.</p>
+    </section>
+  </main>
+ 
+
+  <script src="script.js"></script>
+  <script>
+  const hamburger = document.getElementById("hamburger");
+  const navLinks = document.getElementById("navLinks");
+
+  hamburger.addEventListener("click", () => {
+    navLinks.classList.toggle("open");
+  });
+</script>
+
+
+
+</body>
+</html>
