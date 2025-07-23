@@ -56,3 +56,27 @@
       toggleNav(true);
     });
   })
+
+  const headlines = [
+   "📦Projects",
+  "🚀Courses",
+  "🌐Website",
+  "💼Resume",
+  "📢Job Alerts",
+  "🤝1-on-1 Support",
+  "⭐Premium Access"
+  ];
+
+  let currentIndex = 0;
+  const textElement = document.getElementById("rotating-text");
+
+  setInterval(() => {
+    currentIndex = (currentIndex + 1) % headlines.length;
+    textElement.style.opacity = 0;
+
+    setTimeout(() => {
+      textElement.textContent = headlines[currentIndex];
+      textElement.style.opacity = 1;
+    }, 300); // fade transition time
+  }, 1000); // change every 1 second
+
