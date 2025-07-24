@@ -140,15 +140,18 @@ nav.open {
 }
 
 .hero-title {
-  font-weight: 800;
-  font-size: 4.5rem;
+  font-weight: 700;
+  font-size: 3.5rem;
   line-height: 1.2;
   color:#facc15;
-  text-shadow: 0 2px 10px rgba(16, 185, 129, 0.3);
+  color: #facc15;
+  text-shadow: 0 0 5px rgb(249, 255, 165), 0 0 10px #0ff, 0 0 20px #0ff;
+  text-shadow: 0 2px 10px rgba(239, 237, 129, 0.3);
 }
 
+
 .hero-subtitle {
-  font-size: 2.2rem;
+  font-size: 2rem;
   font-weight: 700;
   color: #ffffff;
   margin-bottom: 1rem;
@@ -264,7 +267,7 @@ nav.open {
 .feature-list li {
   font-size: 1.2rem;
   font-weight: 500;
-  color: #a7f3d0;
+  color: #ffffff;
   margin-bottom: 1rem;
   padding-left: 2rem;
   position: relative;
@@ -275,7 +278,7 @@ nav.open {
   position: absolute;
   left: 0;
   font-size: 1.3rem;
-  color: #34d399;
+  color: #ffffff;
 }
 
 .premium-note {
@@ -447,3 +450,24 @@ details[open] summary {
   background-color: #374151;
   color: #facc15;
 }
+/* website llink */
+
+.cta-btn {
+  display: inline-block;
+  background: linear-gradient(135deg, #6e8efb, #a777e3);
+  color: #ffffff;
+  font-weight: bold;
+  text-decoration: none;
+  padding: 12px 24px;
+  border-radius: 8px;
+  font-size: 1rem;
+  transition: all 0.3s ease;
+  box-shadow: 0 0 10px rgba(166, 119, 227, 0.6);
+}
+
+.cta-btn:hover {
+  transform: translateY(-3px) scale(1.03);
+  box-shadow: 0 0 20px rgba(166, 119, 227, 1);
+  background: linear-gradient(135deg, #7f97ff, #b183f1);
+}
+
