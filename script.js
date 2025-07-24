@@ -59,4 +59,11 @@
 
 
 
+     document.querySelector('.scroll-to-card').addEventListener('click', function () {
+    const target = document.getElementById('java-dsa-card');
+    if (target) {
+      target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+    }
+  });
 
+  

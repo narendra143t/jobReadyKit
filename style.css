@@ -9,6 +9,9 @@ body {
   background-size: 40px 40px;
   min-height: 100vh;
 }
+html {
+  scroll-behavior: smooth;
+}
 
 /* Navbar Styles */
 .navbar {
@@ -256,30 +259,74 @@ nav.open {
   }
 }
 
+.value-title {
+  text-align: center;
+  font-size: 2rem;
+  color: #f19c3b;
+  margin-bottom: 1.5rem;
+  /* text-shadow: 0 0 8px rgba(241, 156, 59, 0.8); */
+    text-shadow: 0 0 12px rgba(255, 168, 51, 0.7);
+}
+.value-section {
+  background: linear-gradient(145deg, #1c1f26, #101218);
+  padding: 2rem 1rem;
+  border-radius: 12px;
+  box-shadow: 0 0 20px rgba(241, 156, 59, 0.4);
+  margin: 2rem auto;
+  max-width: 800px;
+  color: #ffffff;
+}
+
 .feature-list {
   list-style: none;
   padding: 0;
-  margin: 0 auto;
-  max-width: 700px;
-  text-align: left;
+  margin: 0;
 }
 
 .feature-list li {
-  font-size: 1.2rem;
+  font-size: 1.15rem;
   font-weight: 500;
-  color: #ffffff;
-  margin-bottom: 1rem;
-  padding-left: 2rem;
+  margin-bottom: 1.2rem;
+  padding-left: 2.5rem;
   position: relative;
+  color: #e6faff;
+  background-color: rgba(255, 255, 255, 0.03);
+  border-left: 4px solid #f19c3b;
+  border-radius: 8px;
+  padding: 1rem;
 }
 
 .feature-list li::before {
   content: "✅";
   position: absolute;
-  left: 0;
+  left: 10px;
   font-size: 1.3rem;
-  color: #ffffff;
+  color: #f19c3b;
 }
+
+.badge {
+  background: linear-gradient(to right, #f19c3b, #ff914d);
+  color: #000;
+  padding: 0.25rem 0.8rem;
+  border-radius: 20px;
+  font-size: 0.75rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  box-shadow: 0 2px 8px rgba(241, 156, 59, 0.4);
+}
+.urgency-text {
+  text-align: center;
+  color: #ff6c6c;
+  font-weight: bold;
+  margin-bottom: 1rem;
+  animation: pulse 2s infinite;
+}
+
+@keyframes pulse {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0.6; }
+}
+
 
 .premium-note {
   color: #facc15;
@@ -306,6 +353,7 @@ nav.open {
 
   .feature-list li {
     font-size: 1rem;
+      box-shadow: 0 0 8px rgba(241, 156, 59, 0.15);
   }
 }
 
@@ -469,5 +517,117 @@ details[open] summary {
   transform: translateY(-3px) scale(1.03);
   box-shadow: 0 0 20px rgba(166, 119, 227, 1);
   background: linear-gradient(135deg, #7f97ff, #b183f1);
+}
+
+/* footer  */
+.footer {
+    /* position: fixed; */
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background-color: #1f1e1e;
+  color: #fff;
+  padding:  1rem;
+  text-align: center;
+   color: #fff;
+  background-color: #000;
+  background-image: linear-gradient(90deg, rgba(212, 235, 150, 0.05) 1px, transparent 1px),
+                    linear-gradient(rgba(255,255,255,0.05) 1px, transparent 1px);
+  background-size: 40px 40px;
+    z-index: 1000;
+} 
+
+
+
+.page-wrapper {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+/* Make main grow to fill space */
+main {
+  flex: 1;
+}
+
+.footer-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+}
+
+.footer-logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #f19c3b;
+}
+
+.footer-nav a {
+  margin: 0 0.8rem;
+  color: #69fcd6;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.footer-nav a:hover {
+  color: #f19c3b;
+}
+
+.footer-contact a {
+  color: #ffffff;
+  text-decoration: underline;
+}
+
+.footer-bottom {
+  margin-top: 1rem;
+  font-size: 0.9rem;
+  color: #aaa;
+}
+
+/* Optional Social Icons */
+.footer-social a img {
+  width: 24px;
+  margin: 0 0.5rem;
+}
+
+.urgency-banner {
+  margin-top: 1.5rem;
+  background: #1a1a1a;
+  padding: 1rem;
+  border-radius: 8px;
+  font-size: 1rem;
+  font-weight: bold;
+  color: #ff6c6c;
+  box-shadow: 0 0 10px rgba(255, 108, 108, 0.3);
+  animation: blink 2s infinite;
+}
+
+@keyframes blink {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0.6; }
+}
+.feature-list button {
+  all: unset;
+  cursor: pointer;
+  display: block;
+  width: 100%;
+  padding: 0.5rem 0;
+  text-align: left;
+  transition: color 0.3s ease;
+}
+
+.feature-list button:hover {
+  color: #007bff;
+  text-decoration: underline;
+}
+
+.badge {
+  display: inline-block;
+  padding: 0.2rem 0.6rem;
+  margin-right: 0.4rem;
+  border-radius: 0.5rem;
+  background-color: #f0f0f0;
+  font-size: 0.85rem;
 }
 
