@@ -58,12 +58,14 @@
   })
 
 
+  let currentSlide = 0;
+  const slides = document.querySelectorAll(".slide-img");
 
-     document.querySelector('.scroll-to-card').addEventListener('click', function () {
-    const target = document.getElementById('java-dsa-card');
-    if (target) {
-      target.scrollIntoView({ behavior: 'smooth', block: 'start' });
-    }
-  });
+  function showNextSlide() {
+    slides[currentSlide].classList.remove("active");
+    currentSlide = (currentSlide + 1) % slides.length;
+    slides[currentSlide].classList.add("active");
+  }
 
-  
+  setInterval(showNextSlide, 2000);
+// discount
