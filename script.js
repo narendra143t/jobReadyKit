@@ -68,4 +68,16 @@
   }
 
   setInterval(showNextSlide, 2000);
-// discount
+// 
+  const link = document.getElementById("instantLink");
+  const targetId = "kit-details";
+
+  // Hover on desktop
+  link.addEventListener("mouseenter", () => {
+    document.getElementById(targetId).scrollIntoView({ behavior: "smooth" });
+  });
+
+  // Touch on mobile
+  link.addEventListener("touchstart", () => {
+    document.getElementById(targetId).scrollIntoView({ behavior: "smooth" });
+  });
